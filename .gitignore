@@ -1,2 +1,8 @@
 nbyujin-website/
 .DS_Store
+
+# Playwright MCP browser session artifacts
+.playwright-mcp/
+
+# Local screenshots from manual QA / debugging
+/*.png

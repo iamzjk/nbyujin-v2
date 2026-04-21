@@ -1,0 +1,27 @@
+/* Font Awesome 4 self-hosted; aliased as "entypo-fontello" for theme compat. */
+@font-face {
+  font-family: "entypo-fontello";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
+       url("./fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
+       url("./fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype");
+}
+
+#top .avia-font-entypo-fontello,
+body .avia-font-entypo-fontello,
+html body [data-av_iconfont="entypo-fontello"]:before {
+  font-family: "entypo-fontello";
+}
+
+/* Remap Fontello PUA codepoints to Font Awesome equivalents. */
+.image-overlay .image-overlay-inside:before { content: "\f002"; }
+.image-overlay.overlay-type-extern .image-overlay-inside:before { content: "\f08e"; }
+.image-overlay.overlay-type-video .image-overlay-inside:before { content: "\f144"; }
+.av-submenu-indicator:before,
+.mfp-arrow:before,
+.ls-nav-next:before { content: "\f105"; }
+.mfp-arrow-left:before,
+.ls-nav-prev:before { content: "\f104"; }
+.avia_playpause_icon:before { content: "\f144"; }
+.av-pause:before { content: "\f04c"; }
